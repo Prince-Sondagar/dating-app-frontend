@@ -1,0 +1,43 @@
+.login-page {
+	position: relative;
+	.login-wrap {
+		padding: 34px 20px 10px 20px;
+	}
+	.field-title {
+		margin-bottom: 30px;
+		ion-text {
+			font-size: 12px;
+			font-weight: 500;
+		}
+		ion-input {
+			font-size: 13px;
+			min-height: 30px;
+			color: #aba6a6;
+			border-bottom: 1px solid #bbb7b7;
+		}
+	}
+	a {
+		text-decoration: none;
+		font-size: 12px;
+		font-weight: 500;
+	}
+	ion-button {
+		height: 47px;
+		margin: 33px 0 55px 0;
+	}
+	.textAc {
+		color: #9c9c9c;
+		font-size: 12px;
+		a {
+			font-weight: 600;
+		}
+	}
+	img.preview-img {
+		margin-top: 48px;
+	}
+	&.forgot-pass-page {
+		.banner-title {
+			width: 165px;
+		}
+	}
+}

@@ -1,0 +1,162 @@
+/* Chat UI v2.1.0 */
+
+.chat-list {
+	position: relative;
+	.chat-timestamp {
+		font-size: 12px;
+		color: var(--ion-color-medium);
+
+		&.center {
+			text-align: center;
+			margin: 8px 0;
+		}
+	}
+
+	.chat-item {
+		margin-bottom: 10px;
+
+		.chat-item-reaction {
+			position: absolute;
+			left: 5px;
+			bottom: -13px;
+			font-size: 18px;
+			line-height: 18px;
+			color: var(--ion-color-medium);
+			&.gif-reaction {
+				position: absolute;
+				right: 5px;
+				left: initial;
+			}
+		}
+
+		.chat-item-bubble {
+			background-color: #fff;
+			color: #0a0d13b2;
+			padding: 12px 16px;
+			border-radius: 65px;
+			font-size: 13px;
+			font-size: 13px;
+			display: flex;
+			gap: 10px;
+
+			ion-title {
+				padding: 0;
+				font-size: 8px;
+				text-align: right;
+				text-transform: lowercase;
+				padding-top: 9px;
+
+				ion-icon {
+					margin-left: 3px;
+				}
+			}
+		}
+
+		&.chat-item-outgoing {
+			text-align: right;
+
+			.chat-item-inner {
+				flex-direction: row-reverse;
+			}
+
+			.chat-item-bubble.bubble-image {
+				margin-left: auto;
+			}
+
+			.chat-item-bubble {
+				padding: 12px 16px;
+				border-radius: 65px;
+				background: #5c26da;
+				color: #fff;
+				font-size: 13px;
+				display: flex;
+				gap: 10px;
+
+				ion-title {
+					padding: 0;
+					font-size: 8px;
+					text-align: right;
+					text-transform: lowercase;
+					padding-top: 9px;
+
+					ion-icon {
+						margin-left: 3px;
+					}
+				}
+			}
+		}
+
+		.chat-item-inner {
+			display: flex;
+			align-items: flex-end;
+			position: relative;
+		}
+
+		.chat-avatar {
+			align-self: flex-end;
+			margin-right: 8px;
+			width: 40px;
+			height: 40px;
+
+			img {
+				display: inline-block;
+				border-radius: 50%;
+			}
+		}
+
+		.chat-body {
+			max-width: 80%;
+
+			&.gif-body {
+				min-width: 80%;
+			}
+
+			.chat-item-bubble.bubble-image {
+				max-width: 80%;
+				flex-direction: column;
+				gap: 0;
+
+				ion-title {
+					text-align: right;
+				}
+
+				img {
+					border-radius: 20px;
+					max-height: 125px;
+				}
+			}
+		}
+
+		.chat-item-status {
+			font-size: 12px;
+			color: var(--ion-color-medium);
+
+			ion-icon {
+				position: relative;
+				top: 2px;
+			}
+		}
+
+		.chat-item-bubble {
+			position: relative;
+
+			.chat-text {
+				white-space: normal;
+				max-width: 100%;
+				text-align: left;
+
+				img {
+					width: 100%;
+					max-width: 480px;
+					border-radius: 16px;
+				}
+			}
+
+			&.bubble-image {
+				font-size: 0;
+				border-radius: 20px;
+				overflow: hidden;
+			}
+		}
+	}
+}

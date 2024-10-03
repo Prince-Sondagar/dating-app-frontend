@@ -1,0 +1,108 @@
+.banner-wrap {
+	.congrats-banner{
+        position: relative;
+        .congrats-bg-vector{
+            width: 100%;
+            margin-top: -80%;
+            @media (max-width: 1024px) {
+                margin-top: -66%;
+            }
+            @media (max-width: 768px) {
+                margin-top: -40%;
+            }
+            @media (max-width: 575px) {
+                margin-top: -27%;
+            }
+            @media (max-width: 425px) {
+                margin-top: 0;
+            }
+        }
+        .congrats-bg-vector1{
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .congrats-bg-vector2{
+            position: absolute;
+            top: 36%;
+            right: 0;
+            @media (min-width: 426px) and (max-width: 575px) {
+                top: 30%;
+            }
+            @media (min-width: 768px) {
+                top: 2%;
+            }
+        }
+        .congrats-bg-vector3{
+            position: absolute;
+            top: 33%;
+            right: 30%;
+            @media (min-width: 768px) {
+                top: 5%;
+                right: 40%;
+            }
+        }
+        .congrats-bg-vector4{
+            position: absolute;
+            top: 76%;
+            right: 10%;
+            @media (min-width: 426px) and (max-width: 1024px) {
+                top: 60%;
+                width: 150px;
+            }
+            @media (min-width: 1024px) {
+                top: 40%;
+                width: 150px;
+            }
+            @media (min-width: 426px) and (max-width: 768px) {
+                top: 70%;
+                width: 150px;
+            }
+        }
+        .congrats-bg-vector5{
+            position: absolute;
+            top: 21%;
+            left: 2%;
+            rotate: 4deg;
+            @media (min-width: 426px) and (max-width: 575px) {
+                height: 62%;
+                top: 27%;
+            }
+            @media (max-width: 392px) {
+                height: 62%;
+                top: 27%;;
+            }
+        }
+    }
+	.congrats-content {
+		padding: 22px 15px 0 27px;
+		ion-text {
+			color: #54565a;
+			display: block;
+		}
+		.title {
+			font-size: 40px;
+			font-weight: 600;
+		}
+		.sub-title {
+			font-size: 20px;
+			font-weight: 600;
+			margin: 10px 0 30px 0;
+		}
+		.desc {
+			font-size: 15px;
+			font-weight: 400;
+			span {
+				font-weight: 500;
+			}
+		}
+	}
+    .btn-start{
+        margin-right: 15px;
+        ion-button {
+            height: 47px;
+            width: 200px;
+            margin: 62px 15px 62px 0;
+        }
+    }
+}

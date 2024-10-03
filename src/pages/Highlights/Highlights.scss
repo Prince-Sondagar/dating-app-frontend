@@ -1,0 +1,173 @@
+.heighlights-main {
+	ion-content {
+		--offset-bottom: auto !important;
+		--overflow: hidden;
+		overflow: auto;
+	}
+
+	ion-header {
+		.likes-logo {
+			padding-top: 46px;
+		}
+
+		ion-toolbar {
+			--background: var(--ion-background-color);
+
+			ion-segment-button{
+				min-width: 30px;
+			}
+
+			.like-header {
+				padding: 0 18px;
+				padding-top: 20px;
+				width: 100%;
+
+				.like-button {
+					height: 27px;
+					background-color: #5C26DA;
+					border-radius: 37px;
+					font-size: 9px;
+					text-transform: capitalize;
+					padding: 0 7px;
+
+					&::part(native) {
+						color: #fff;
+					}
+
+					img {
+						margin-right: 5px;
+					}
+				}
+
+				.like-sent {
+					margin-left: 10px;
+
+					ion-icon {
+						margin-right: 5px;
+						font-size: 16px;
+					}
+				}
+
+				.like-sent-active-icon {
+					color: #5C26DA;
+					font-size: 16px;
+				}
+
+				ion-text {
+					color: #5C26DA;
+					font-size: 24px;
+					font-weight: 600;
+				}
+			}
+		}
+
+		ion-button {
+			color: var(--ion-text-dark-gray);
+			font-weight: 500 !important;
+			font-size: 15px;
+			height: 32px;
+			margin: 4px;
+			--border-width: 2px;
+			--border-color: var(--ion-color-gray-shade2);
+			--padding-start: 12px;
+			--padding-end: 12px;
+			--background-activated: var(--ion-background-color);
+
+			&.border-active {
+				--border-color: #cd9f0e;
+			}
+		}
+
+		.diff-type {
+			padding: 6px 12px;
+			white-space: nowrap;
+			overflow-y: auto;
+
+			&::-webkit-scrollbar {
+				display: none;
+			}
+		}
+	}
+
+	.highlights-page {
+		.segment-view {
+			padding: 10px 20px 20px;
+
+			.like-text-bg-main {
+				position: relative;
+				margin: 10px;
+				background-color: #FFC93E;
+				border-radius: 3px 12px;
+
+				.like-bg-desc {
+					padding: 10px 0;
+					padding-left: 17px;
+					color: #0A0D13;
+					font-size: 10px;
+					font-weight: 500;
+					width: 216px;
+					line-height: 12px;
+
+					@media (max-width: 374px) {
+						font-size: 9px;
+						width: 180px;
+					}
+				}
+
+				.like-bg-title {
+					position: absolute;
+					top: 0;
+					right: 0;
+					height: 100%;
+
+					img {
+						border-radius: 0 12px 3px 0;
+					}
+
+					ion-text {
+						position: absolute;
+						top: 9px;
+						right: 11px;
+						font-size: 10px;
+						color: #fff;
+						text-align: right;
+						font-weight: 600;
+					}
+				}
+			}
+		}
+
+		.boost-promotion {
+			margin: 12px 24px 8px;
+			padding: 16px;
+			background: linear-gradient(var(--ion-color-white) 0%, rgba(var(--ion-color-boost-rgb), 0.3) 100%);
+			text-align: center;
+			border-radius: 0 0 36px 36px;
+		}
+
+		.offer-message {
+			text-align: center;
+			padding: 24px;
+		}
+
+		ion-button.btn-likes-you {
+			position: fixed;
+			bottom: 24px;
+			left: 50%;
+			transform: translateX(-50%);
+			z-index: 3;
+			--background: linear-gradient(45deg, #e6af16, #f7d472);
+			--background-hover: linear-gradient(45deg, #e6af16, #f7d472);
+			--background-activated: linear-gradient(45deg, #e6af16, #f7d472);
+			font-size: 19px;
+			min-width: 260px;
+			height: 44px;
+		}
+
+		ion-button.btn-upgrade-likes {
+			--background: linear-gradient(45deg, #111418, #656e7b, #111418);
+			--background-hover: linear-gradient(45deg, #111418, #656e7b, #111418);
+			--background-activated: linear-gradient(45deg, #111418, #656e7b, #111418);
+		}
+	}
+}

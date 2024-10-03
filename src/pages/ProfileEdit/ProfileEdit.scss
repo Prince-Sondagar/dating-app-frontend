@@ -1,0 +1,242 @@
+.profile-edit-header {
+	padding: 60px 24px 10px 24px;
+	ion-icon {
+		float: right;
+		font-size: 22px;
+		color: var(--ion-text-new-dark-gray);
+		margin-top: -14px;
+	}
+	ion-text {
+		font-size: 20px;
+		font-weight: 600;
+		color: var(--ion-text-new-dark);
+	}
+}
+.profile-edit-page {
+	padding: 0 24px;
+	.chip-toolbar {
+		h6 {
+			font-size: 13px;
+			font-weight: 600;
+			color: var(--ion-text-new-dark);
+		}
+		span {
+			background: #5c26da;
+			font-size: 7px;
+			font-weight: 700;
+			color: #fff;
+			text-transform: uppercase;
+			border-radius: 32px;
+			padding: 3px 11px;
+			margin-left: 10px;
+		}
+		h5 {
+			font-size: 9px;
+			font-weight: 600;
+			color: #5c26da;
+		}
+	}
+	.photos-edit {
+		padding: 0 15px;
+		.chip-toolbar {
+			padding: 0 10px 5px 10px;
+		}
+		.photo-item {
+			position: relative;
+			&.no-photo .photo-image {
+				border: 1px dashed #0a0d1380;
+			}
+		}
+
+		.photo-image {
+			border-radius: 6px;
+			background-color: #f7f8fb;
+			height: 0;
+			padding-top: 115%;
+		}
+
+		.photo-button {
+			position: absolute;
+			right: -6px;
+			top: -1px;
+			border-radius: 999em;
+			width: 28px;
+			height: 28px;
+			font-size: 18px;
+			text-align: center;
+
+			ion-icon {
+				color: #494a4c;
+			}
+
+			&.photo-button-invert {
+				right: initial;
+				bottom: 0;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				width: 45px;
+				height: 45px;
+
+				ion-icon {
+					color: rgba(30, 30, 30, 0.3);
+					width: 45px;
+					height: 45px;
+				}
+			}
+		}
+	}
+	.profile-list-items {
+		padding: 0 25px 60px 25px;
+		ion-list{
+			background: transparent;
+		}
+		ion-item{
+			--background: transparent;
+		}
+		.common-title {
+			font-size: 13px;
+			font-weight: 600;
+			color: var(--ion-text-new-dark);
+		}
+		.list-about-me {
+			padding: 16px 0;
+			.textarea-about {
+				position: relative;
+				ion-textarea {
+					background-color: #f7f8fb;
+					border-radius: 2px;
+					color: #9c9c9c;
+					font-size: 10px;
+					--placeholder-opacity: 1;
+					--padding-start: 10px;
+					--padding-end: 10px;
+					min-height: 63px;
+					margin-top: 10px;
+				}
+				ion-note {
+					position: absolute;
+					right: 7px;
+					bottom: 9px;
+					font-size: 9px;
+					z-index: 2;
+					color: #0a0d13b3;
+				}
+			}
+		}
+		.passion-list {
+			padding-bottom: 10px;
+			.orientation-sect {
+				ion-button.passion-item {
+					--border-color: #e5e7eb;
+					--border-width: 1px;
+					color: #0a0d13b3;
+					font-weight: 500 !important;
+					--background: #f7f8fb;
+					--background-activated: #f7f8fb;
+					height: 26px;
+					font-size: 12px;
+					margin: 14px 13px 0 0;
+					img {
+						margin-right: 5px;
+					}
+					&::part(native) {
+						padding: 0 22px;
+					}
+				}
+				ion-button.btn-passions {
+					--border-width: 0;
+					--background: transparent;
+					color: #5c26da;
+					font-size: 12px;
+					font-weight: 500 !important;
+					text-transform: uppercase;
+					--border-radius: 0;
+					--background-activated: transparent;
+					height: 26px;
+					margin: 14px 0 0 0;
+					&::part(native) {
+						padding: 0;
+					}
+					ion-icon {
+						margin-right: 4px;
+					}
+				}
+			}
+		}
+		.title-wrapper {
+			margin-top: 8px;
+			ion-item {
+				&::part(native) {
+					padding: 0;
+				}
+				&::part(detail-icon) {
+					margin-right: -16px;
+					--detail-icon-color: var(--ion-text-new-dark);
+					opacity: 1;
+					font-size: 16px;
+				}
+			}
+			ion-label {
+				display: flex;
+				color: var(--ion-text-new-dark);
+				font-size: 13px;
+				gap: 8px;
+				margin: 0 8px 0 0;
+			}
+			ion-note {
+				color: var(--ion-text-new-dark);
+				font-size: 13px;
+			}
+		}
+		.basic-detail {
+			margin: 10px 0 16px 0;
+			ion-item {
+				--min-height: 30px;
+			}
+			.basic-icons {
+				ion-icon {
+					font-size: 16px;
+				}
+			}
+		}
+		.job-list {
+			ion-item {
+				--min-height: 30px;
+			}
+			ion-icon {
+				font-size: 16px;
+			}
+		}
+		.control-list {
+			.title-wrapper{
+				margin-top: 16px;
+			}
+			.chip-toolbar {
+				span {
+					text-transform: initial;
+					font-size: 10px;
+					display: flex;
+					align-items: center;
+					gap: 6px;
+					padding: 2px 8px;
+					ion-icon {
+						font-size: 14px;
+					}
+				}
+			}
+		}
+	}
+}
+ion-toggle{
+	width: 39px;
+    height: 17px;
+    padding: 0;
+	--handle-width: 12px;
+	--handle-height: 12px;
+	--track-background: #e7ebf6;
+	&::part(track){
+		width: 39px;
+		height: 17px;
+	}
+}

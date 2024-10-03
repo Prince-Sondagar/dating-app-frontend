@@ -1,0 +1,58 @@
+ion-header.pass-toolbar {
+	padding: 60px 24px 10px 24px;
+	text-align: center;
+	ion-text {
+		font-size: 20px;
+		font-weight: 600;
+		color: var(--ion-text-new-dark);
+	}
+	ion-icon {
+		float: right;
+		font-size: 22px;
+		color: var(--ion-text-new-dark-gray);
+		margin-top: -14px;
+	}
+}
+.passions-page {
+	ion-list{
+		background: transparent;
+	}
+	.tag-count {
+		margin: 8px 16px 6px;
+	}
+	.passion-desc {
+		color: var(--ion-text-new-dark);
+		font-size: 13px;
+	}
+	.passion-list {
+		ion-button {
+			--border-color: #e5e7eb;
+			--border-width: 1px;
+			color: #0a0d13b3;
+			font-weight: 500 !important;
+			--background: #f7f8fb;
+			--background-activated: #f7f8fb;
+			height: 26px;
+			font-size: 12px;
+			margin: 7px 6px;
+			min-width: 90px;
+			&::part(native) {
+				padding: 0 12px;
+			}
+		}
+		ion-button.selected-passion {
+			--border-width: 0;
+			--background-activated: #5c26da;
+			--background: #5c26da;
+			color: #fff;
+		}
+		ion-label {
+			font-size: 16px;
+			font-weight: 600;
+		}
+		ion-label,
+		ion-text {
+			color: var(--ion-text-new-dark);
+		}
+	}
+}

@@ -1,0 +1,39 @@
+.capture-video {
+    video {
+        height: 100vh;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .close-icon {
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        width: 36px;
+        height: 36px;
+        color: #7c8591;
+        z-index: 2;
+    }
+    ion-icon.camera-icon{
+        --ionicon-stroke-width: 20px;
+    }
+    .camera-icon{
+        position: absolute;
+        bottom: 10%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 94px;
+        height: 94px;
+        color: #fff;
+        z-index: 2;
+    }
+    .loader-icon{
+        position: absolute;
+        bottom: 12%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 50px;
+        height: 50px;
+        color: #f95266;
+    }
+}

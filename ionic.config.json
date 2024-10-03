@@ -1,0 +1,7 @@
+{
+  "name": "based-dating",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}

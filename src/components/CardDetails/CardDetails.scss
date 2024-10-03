@@ -1,0 +1,16 @@
+.payment-method-card {
+    ion-checkbox {
+        --size: 20px;
+    }
+
+    ion-icon.trash-icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    .payment-title {
+        text-transform: uppercase;
+        text-align: right;
+        font-weight: 600;
+    }
+}

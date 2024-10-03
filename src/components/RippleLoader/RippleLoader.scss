@@ -1,0 +1,121 @@
+.ripple-loader {
+  position: relative;
+  width: 96px;
+  height: 96px;
+
+  .discover-loader-avatar1 {
+    position: absolute;
+    top: -112px;
+    right: -20px;
+  }
+
+  .discover-loader-avatar2 {
+    position: absolute;
+    right: -128px;
+    top: 0;
+
+    @media (max-width:392px) {
+      right: -100px;
+    }
+  }
+
+  .discover-loader-avatar3 {
+    position: absolute;
+    left: -110px;
+    bottom: -120px;
+  }
+
+  .discover-loader-circle1 {
+    position: absolute;
+    top: -102px;
+    left: -81px;
+  }
+
+  .discover-loader-circle2 {
+    position: absolute;
+    top: 0;
+    left: -91px;
+  }
+
+  .discover-loader-circle3 {
+    position: absolute;
+    bottom: -48px;
+    right: -52px;
+  }
+
+  .discover-loader-circle4 {
+    position: absolute;
+    bottom: -71px;
+    right: -26px;
+  }
+
+  ion-avatar img {
+    box-shadow: 0 2px 6px 0 rgba(112, 125, 134, 0.14);
+    border: 2px solid var(--ion-color-white);
+  }
+
+  .ripple-trigger {
+    position: absolute;
+    z-index: 9;
+    transition: transform 250ms ease-out;
+    animation: beating 2s infinite ease-out;
+
+    &:active {
+      transform: scale3d(1.2, 1.2, 1);
+    }
+  }
+
+  .ripple-1,
+  .ripple-2 {
+    position: absolute;
+    z-index: 1;
+    top: 2px;
+    left: 2px;
+    width: 92px;
+    height: 92px;
+    border-radius: 999em;
+    animation: rippling 2s infinite ease-out;
+  }
+
+  .ripple-2 {
+    animation-delay: 350ms;
+  }
+
+  @keyframes beating {
+    0% {
+      transform: scale3d(1, 1, 1);
+    }
+
+    10% {
+      transform: scale3d(1.2, 1.2, 1);
+    }
+
+    20% {
+      transform: scale3d(0.95, 0.95, 1);
+    }
+
+    30% {
+      transform: scale3d(1.05, 1.05, 1);
+    }
+
+    40% {
+      transform: scale3d(1, 1, 1);
+    }
+
+    100% {
+      transform: scale3d(1, 1, 1);
+    }
+  }
+
+  @keyframes rippling {
+    0% {
+      opacity: 1;
+      transform: scale3d(1, 1, 1);
+    }
+
+    100% {
+      opacity: 0;
+      transform: scale3d(2, 2, 1);
+    }
+  }
+}

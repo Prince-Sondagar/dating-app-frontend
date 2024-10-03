@@ -1,0 +1,28 @@
+.confirm-modal {
+	--backdrop-opacity: 0.4 !important;
+	@media (max-width: 767px) {
+		--width: 95%;
+		--height: 200px;
+	}
+	@media (max-width: 415px) {
+		--height: 200px;
+	}
+	@media (max-width: 374px) {
+		--width: 100%;
+	}
+	.ac-header{
+		padding:5px 5px;
+		ion-icon{
+			float: right;
+		}
+	}
+	ion-text p {
+		margin: 40px 45px;
+		text-align: center;
+		color: var(--ion-text-dark-color);
+	}
+	.ion-margin-vertical{
+		display: flex;
+		justify-content: space-evenly;
+	}
+}

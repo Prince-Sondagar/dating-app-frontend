@@ -1,0 +1,73 @@
+.vibeCard {
+	.event-card {
+		height: 0;
+		min-height: 210px;
+		padding-top: 144%;
+		box-shadow: var(--card-light-shadow);
+		border-radius: var(--swipe-card-border-radius);
+		position: relative;
+
+		.overlay {
+			background: rgba(0, 0, 0, 0.283);
+			border-radius: var(--swipe-card-border-radius);
+			height: 100%;
+			position: absolute;
+			top: 0;
+			width: 100%;
+		}
+
+		.card-inside {
+			background: rgba(0, 0, 0, 0.283);
+			border-radius: var(--swipe-card-border-radius);
+			height: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			z-index: 5;
+
+			.card-title {
+				padding: 0 8px;
+			}
+		}
+
+		.caption-text {
+			padding-bottom: 10px;
+			position: relative;
+
+			.card-title {
+				color: white;
+				padding: 0 8px;
+			}
+		}
+
+		.bottom-holder {
+			bottom: 5px;
+			left: 0;
+			position: absolute;
+			width: 100%;
+			padding: 0 8px;
+
+			.caption-title {
+				color: white;
+				font-size: 0.7em;
+				font-weight: 600;
+			}
+
+			.caption-time {
+				color: gray;
+				font-weight: 600;
+				font-size: 0.7em;
+			}
+		}
+
+		.btn {
+			background: transparent;
+			border-radius: 0;
+			color: white;
+			font-size: 28px;
+			font-weight: 700;
+			word-break: break-all;
+		}
+	}
+}

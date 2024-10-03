@@ -1,0 +1,39 @@
+.gold-membership-page {
+  .header-title {
+    text-align: center;
+    margin: 24px auto 16px;
+    font-size: 20px;
+  }
+
+  .slides-intro {
+    min-height: 100px;
+  }
+
+  .price-tag {
+    text-align: center;
+    margin: 16px;
+    border: 1px solid var(--ion-color-gold);
+    padding: 16px;
+    border-radius: var(--swipe-card-border-radius);
+    background-color: rgba(var(--ion-color-gold-rgb), 0.1);
+
+    .plan-name {
+      font-size: 12px;
+      margin-bottom: 24px;
+    }
+
+    .number-big {
+      font-size: 36px;
+    }
+  }
+
+  .button-group {
+    width: 240px;
+    margin: 0 auto;
+  }
+
+  .text-lg {
+    font-size: 20px;
+  }
+
+}

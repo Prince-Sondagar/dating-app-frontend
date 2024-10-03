@@ -1,0 +1,83 @@
+.swipe-card {
+  height: 100%;
+  position: relative;
+  border-radius: var(--swipe-card-border-radius);
+  
+  .card-caption {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    padding: 0 15px 13px 15px;
+    z-index: 200;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7) 10%, rgba(40, 50, 60, 0.1) 100%);
+    color: #fff;
+    border-radius: 0 0 var(--swipe-card-border-radius) var(--swipe-card-border-radius);
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.05), 0 1px 0 rgba(0, 0, 0, 0.05);
+    .card-title{
+      padding-bottom: 7px;
+    }
+    ion-icon.ion-info{
+      position: absolute;
+      right: 0;
+      bottom: 2px;
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  .card-user-name {
+    font-size: 24px;
+    font-weight: 600;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 230px;
+    display: block;
+    text-transform: capitalize;
+  }
+
+  .card-user-age {
+    font-size: 24px;
+    ion-icon {
+      margin: 0 7px;
+      font-size: 8px;
+    }
+  }
+
+  .card-user-icon{
+    background-color: transparent;
+    padding: 0;
+    margin-left: 20px;
+    img{
+      height: 24px;
+      width: 24px;
+    }
+  }
+
+  .button-info {
+    font-size: 32px;
+  }
+
+  .card-user-info {
+    font-size: 11px;
+    ion-icon {
+      margin-right: 10px;
+      font-size: 12px;
+    }
+  }
+
+  .passion-list {
+    ion-button {
+      --padding-start: 12px;
+      --padding-end: 12px;
+      --border-width: 0;
+      margin-right: 8px;
+      margin-bottom: 8px;
+      border-radius: 999em;
+      -webkit-backdrop-filter: blur(10px);
+      backdrop-filter: blur(10px);
+      background-color: rgba(255, 255, 255, 0.5);
+    }
+  }
+}

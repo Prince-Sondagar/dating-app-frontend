@@ -1,0 +1,41 @@
+.location-alert-modal {
+	--width: 360px;
+	--height: 351px;
+	justify-content: center;
+	align-items: center;
+	--background: #fff;
+	@media (max-width: 474px) {
+		--width: 90%;
+	}
+	.alert-page {
+		padding: 20px;
+		.title{
+			font-size: 16px;
+			font-weight: 600;
+			color: #21262e;
+			text-align: left;
+		}
+		ion-button {
+			margin-top: 32px;
+			--background: linear-gradient(to top right, #83580c 0%, #d7a550 100%);
+			--background-activated: linear-gradient(to top right, #83580c 0%, #d7a550 100%);
+			--background-hover: linear-gradient(to top right, #83580c 0%, #d7a550 100%);
+			font-size: 19px;
+			min-width: 156px;
+		}
+	}
+	ion-input.custom {
+		--background: #ddd;
+		--color: #21262e;
+		--placeholder-color: #21262e;
+		--placeholder-opacity: 0.8;
+		--padding-bottom: 10px;
+		--padding-end: 10px;
+		--padding-start: 14px;
+		--padding-top: 10px;
+		border-radius: 4px;
+		text-align: left;
+		margin-bottom: 12px;
+		font-weight: 600;
+	  }
+}
